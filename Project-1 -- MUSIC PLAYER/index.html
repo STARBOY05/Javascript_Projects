@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>MUSIC PLAYER</title>
+</head>
+
+<body>
+    <h1 class="animate__animated animate__flip">MUSIC PLAYER</h1>
+    <div class="music-container play animate__animated animate__zoomIn">
+        <div class="music-container-inner"></div>
+        <div class="img-container">
+            <img src="/img/Hall Of Fame" alt="music-cover" id="cover">
+        </div>
+
+        <div class="music-info">
+            <h4 id="title">HALL OF FAME</h4>
+        </div>
+        <audio src="./music/Hall Of Fame.mp3" id="audio"></audio>
+        <div class="progress-container">
+            <div class="progress"></div>
+        </div>
+        <div class="navigation">
+            <button id="prev" class="action-btn">
+                <i class="fas fa-chevron-circle-left"></i>
+            </button>
+            <!-- <button id="back" class="action-btn">
+                <i class="fas fa-backward"></i>
+            </button> -->
+            <button id="play" class="action-btn action-btn-big">
+                <i class="fas fa-play"></i>
+            </button>
+            <!-- <button id="fast" class="action-btn">
+                <i class="fas fa-forward"></i>
+            </button> -->
+            <button id="next" class="action-btn">
+                <i class="fas fa-chevron-circle-right"></i>
+            </button>
+        </div>
+
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>
